@@ -15,7 +15,7 @@ public class PersonaDAO {
 		try {
 			//1. Conectarse a la base de datos.
 			bdUtil.conectar();
-			System.out.println("Conexi�n a la DB: " + bdUtil.conectar());
+			System.out.println("Conexión a la DB: " + bdUtil.conectar());
 			//2. Definir la sentencia sql (INSERT).
 			String sql = "INSERT INTO persona(nombre, edad) VALUES(?, ?)"; //Los ID autoincrementales no van aca, ya que el dbms asigna su valor.
 			Connection co = bdUtil.getConexion(); 
@@ -25,10 +25,10 @@ public class PersonaDAO {
 			//3. Ejecutar el SQL.
 			st.executeUpdate();
 			resultado = true;
-			System.out.println("Ejecuci�n del SQL: " + resultado);
+			System.out.println("Ejecución del SQL: " + resultado);
 		} catch (Exception ex) {
 			resultado = false;
-			System.out.println("Ejecuci�n del SQL: " + resultado);
+			System.out.println("Ejecución del SQL: " + resultado);
 			//4. Desconectarse.
 		} finally { 
 			bdUtil.desconectar(); 
