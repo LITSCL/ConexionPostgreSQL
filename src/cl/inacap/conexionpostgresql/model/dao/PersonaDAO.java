@@ -7,7 +7,6 @@ import cl.inacap.conexionpostgresql.model.dto.Persona;
 import cl.inacap.conexionpostgresql.util.BDUtil;
 
 public class PersonaDAO {
-	
 	private BDUtil bdUtil = new BDUtil();
 	
 	public boolean save(Persona p) {
